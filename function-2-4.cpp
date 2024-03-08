@@ -2,7 +2,7 @@
 
 int array_min(int integers[], int length) {
 
-    int minElement = 0; 
+    int minElement = integers[0];
 
     for (int i = 0; i<length; i++) {
 
@@ -14,7 +14,10 @@ int array_min(int integers[], int length) {
 }
 
 int array_max(int integers[], int length) {
-    int maxElement = 0; 
+    
+    int maxElement = integers[0]; 
+
+
     for (int i = 0; i<length; i++) {
 
         if (integers[i]> maxElement) {
@@ -29,7 +32,7 @@ int sum_min_max(int integers[], int length) {
     int max = array_max(integers, length);
     int min = array_min(integers, length);
 
-    int sum = max + min
+    int sum = max + min;
 
     return sum;
 }
