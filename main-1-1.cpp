@@ -5,7 +5,10 @@
 Person* createPersonArray(int n);
 
 int main() {
-    int n = 5; 
+
+    int n = 5;
+
+ 
     Person* personArray = createPersonArray(n);
 
     
