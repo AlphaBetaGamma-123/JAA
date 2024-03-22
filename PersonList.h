@@ -13,4 +13,7 @@ struct PersonList {
     int numPeople;
 };
 
+
+PersonList createPersonList(int n);
+
 #endif // PERSON_H
