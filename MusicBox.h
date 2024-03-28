@@ -1,11 +1,11 @@
-// #ifndef MUSICBOX_H
+#ifndef MUSICBOX_H
 #define MUSICBOX_H
 #include <string>
 
 
 class MusicBox{
     private: 
-        std::string songname;
+        std::string song;
         int width; 
 
     public: 
@@ -25,5 +25,7 @@ class MusicBox{
     ~MusicBox();       //A default destructor
 
 };
+
+#endif 
 
 
