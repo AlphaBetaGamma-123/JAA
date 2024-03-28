@@ -1,19 +1,19 @@
 #include "MusicBox.h"
 #include <string>
 
-MusicBox::MusicBox() {
-    songname0 = "null";
-    width0 = 0;
-}
+MusicBox::MusicBox() : song( " "), width(0) {}
 
-MusicBox::MusicBox(std:: string songname, int width){
-    songname0 = songname;
-    width0 = width;
-};
+MusicBox::MusicBox(std:: string songname, int width) : song(songname), width(width) {}
 
-std::string MusicBox :: get_songname() {return songname0;}
 
-int MusicBox:: get_experience() {return width0:} 
+std::string MusicBox :: get_song() {return song;}
+
+int MusicBox:: get_width() {return width;} 
+
+
+MusicBox:: ~MusicBox() {}
+
+
 
 
    
