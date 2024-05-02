@@ -1,12 +1,14 @@
-// Car.h
 #ifndef CAR_H
 #define CAR_H
 
 class Car {
-public:
-    Car();  // Default constructor
-    Car(int price);  // Constructor with price
 
+
+public:
+
+
+    Car();  
+    Car(int price);  
     int get_price() const;
     void set_price(int price);
 
@@ -14,6 +16,7 @@ public:
     void set_emissions(int emissions);
 
     virtual void drive(int kms);
+    
 
 private:
     int price;
