@@ -1,4 +1,3 @@
-// Tesla.h
 #ifndef TESLA_H
 #define TESLA_H
 
@@ -6,6 +5,8 @@
 
 class Tesla : public Car {
 public:
+
+
     Tesla();
     Tesla(char model, int price);
 
@@ -18,7 +19,10 @@ public:
     void chargeBattery(int mins);
     virtual void drive(int kms) override;
 
+    
 private:
+
+
     char model;
     float batteryPercentage;
 };
