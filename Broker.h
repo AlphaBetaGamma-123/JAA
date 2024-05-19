@@ -2,6 +2,7 @@
 #define BROKER_H
 
 #include "Security.h"
+#include "Client.h"
 #include <vector>
 #include <string>
 
