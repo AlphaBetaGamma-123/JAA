@@ -1,4 +1,7 @@
 #include "Broker.h"
+#include "Shares.h"
+#include "Bonds.h"
+#include "ETFs.h"
 
 Broker::Broker(const std::string &name, const std::string &market_status)
     : broker_name(name), market_status(market_status) {}
@@ -63,6 +66,5 @@ Security* Broker::search_security(const std::string &symbol) const {
 }
 
 bool Broker::check_arbitrage(const Client &client) {
-    // Check if the client has sufficient funds to perform an action (simplified example)
     return client.get_deposited_funds() > 0;
 }
