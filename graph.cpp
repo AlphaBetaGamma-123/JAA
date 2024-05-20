@@ -31,11 +31,11 @@ void drawChart(const std::vector<DataPoint>& dataPoints) {
         window.draw(xAxis, 2, sf::Lines);
         window.draw(yAxis, 2, sf::Lines);
 
-        // Draw data points and lines
+                // Draw data points and lines
         for (size_t i = 0; i < dataPoints.size(); ++i) {
-            sf::CircleShape point(3);
-            point.setFillColor(sf::Color::Red);
-            point.setPosition(50 + dataPoints[i].x, 550 - dataPoints[i].y);
+            sf::CircleShape point(3); // dot with a radius of 3 pixels. 
+            point.setFillColor(sf::Color::Red); // color of dot. 
+            point.setPosition(60 + dataPoints[i].x, 550 - dataPoints[i].y);
             window.draw(point);
 
             if (i > 0) {
@@ -52,11 +52,50 @@ void drawChart(const std::vector<DataPoint>& dataPoints) {
 }
 
 int main() {
-    std::vector<DataPoint> dataPoints = {
-        {0, 0}, {50, 100}, {100, 200}, {150, 300}, {200, 400}, {250, 350}, {300, 300}, {350, 250}, {400, 200}, {450, 150}, {500, 100}, {550, 50}, {600, 0}
-    };
+    std::vector<DataPoint> dataPoints;
+    DataPoint dp;
+
+    dp.x = 0; dp.y = 0;
+    dataPoints.push_back(dp);
+
+    dp.x = 50; dp.y = 100;
+    dataPoints.push_back(dp);
+
+    dp.x = 100; dp.y = 200;
+    dataPoints.push_back(dp);
+
+    dp.x = 150; dp.y = 300;
+    dataPoints.push_back(dp);
+
+    dp.x = 200; dp.y = 400;
+    dataPoints.push_back(dp);
+
+    dp.x = 250; dp.y = 350;
+    dataPoints.push_back(dp);
+
+    dp.x = 300; dp.y = 300;
+    dataPoints.push_back(dp);
+
+    dp.x = 350; dp.y = 250;
+    dataPoints.push_back(dp);
+
+    dp.x = 400; dp.y = 200;
+    dataPoints.push_back(dp);
+
+    dp.x = 450; dp.y = 150;
+    dataPoints.push_back(dp);
+
+    dp.x = 500; dp.y = 100;
+    dataPoints.push_back(dp);
+
+    dp.x = 550; dp.y = 50;
+    dataPoints.push_back(dp);
+
+    dp.x = 600; dp.y = 0;
+    dataPoints.push_back(dp);
 
     drawChart(dataPoints);
 
     return 0;
 }
+
